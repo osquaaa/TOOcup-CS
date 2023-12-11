@@ -660,11 +660,12 @@ body{
     line-height: 142%;
 }
 .item-practice__image{
-    display: block;
     padding: 0px 0px 60% 0px;
 }
 .item-practice__image img{
     object-position: left;
+    width: 100%;
+    height: 100%;
 }
 
 
