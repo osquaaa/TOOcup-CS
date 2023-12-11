@@ -489,6 +489,13 @@ body{
     line-height: 142%;
     letter-spacing: 0.2px;
 }
+.item-service__telegram-link{
+    color: #fff;
+    font-size: 20px;
+}
+.item-service__telegram-link:hover{
+    color: #e0e0e0;
+}
 /*-------ADVANTAGES------------------------------------------------------------------------------------*/
 
 
@@ -641,8 +648,10 @@ body{
     display: inline-block;
     text-decoration: inherit;
 }
+.item-practice__link-telegram{
+    color: inherit;
+}
 .item-practice__link:hover{
-    text-decoration: underline;
 }
 .item-practice__link:not(:last-child){
     margin: 0px 0px 15px 0px;
@@ -660,12 +669,18 @@ body{
     line-height: 142%;
 }
 .item-practice__image{
+    position: relative;
     padding: 0px 0px 60% 0px;
+
 }
 .item-practice__image img{
+    position: absolute;
     object-position: left;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
 
