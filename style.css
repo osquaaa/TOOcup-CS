@@ -129,6 +129,97 @@ body{
         font-size: 18px;
     }
 }
+
+#zatemnenie {
+    background: rgba(20, 20, 20, 0.551);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 51;
+}
+#okno {
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 10px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(4,4,4);
+    background: linear-gradient(90deg, rgba(4, 4, 4, 0.561) 32%, rgba(121, 9, 9, 0.561) 100%);
+    backdrop-filter: blur(10px);
+    z-index: 51;
+    
+}
+#zatemnenie:target {display: block;}
+.okno__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.close {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 25px 40px;
+    margin: 3px;
+    text-decoration: none;
+    background: #8c0000;;
+    font-size: 14pt;
+    cursor:pointer;
+    transition: background-color all 0.3s ease 0s;
+}
+.telega {
+    border-radius: 10px;
+    color: #3d3d3d;
+    padding: 25px 40px;
+    margin: 3px;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 14pt;
+    cursor:pointer;
+    transition: background-color all 0.3s ease 0s;
+}
+.telega:hover{
+    background: #c9c9c9;
+}
+.close:hover {background: #8c000096;}
+
+@media (max-width:472px){
+    #okno{
+        width: 300px;
+        padding: 25px;
+        font-size: 16px;
+        display: inline;
+    }
+    .close{
+        padding: 20px 20px;
+    }
+    .telega{
+        padding: 20px 20px;
+    }
+}
+@media (max-width:310px){
+    #okno{
+        width: 250px;
+    }
+    .close{
+        padding: 20px 5px;
+    }
+    .telega{
+        padding: 20px 5px;
+    }
+}
 /*-------МЕНЮ------------------------------------------------------------------------------------*/
 .page{
     flex: 1 1 auto;
